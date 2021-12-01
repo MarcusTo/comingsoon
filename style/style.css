@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    color: #ffffff;
+    background: firebrick;
+}
+
+.container{
+    background-image: url('../img/pexels-invisiblepower-351448.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+.inner-container{
+    position: absolute;
+    height: 100%;
+    padding: 10rem;
+    width: 100%;
+    text-align: center;
+}
+.inner-container h1{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 5rem;
+}
+.countdown{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.countdown div{
+    padding: 0.6rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 0.3rem;
+    background-color: rgb(207, 21, 21);
+}
+@media (max-width:586px){
+    .inner-container{
+        padding: 5rem;
+        font-size: 3rem;
+    }
+
+    .countdown{
+        flex-direction: column;
+    }
+}
